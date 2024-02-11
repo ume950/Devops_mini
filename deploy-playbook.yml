@@ -6,14 +6,14 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: umeshjaware/calculator-using-devops
+        name: umeshjaware/umesh_pipeline
         tag: latest
         source: pull
 
     - name: Create & Start Calculator Docker Container
       docker_container:
         name: calculator-using-devops
-        image: jasvinjames/umesh_pipeline
+        image: umeshjaware/umesh_pipeline
         state: started
         tty: yes
         interactive: yes
