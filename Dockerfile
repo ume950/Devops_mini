@@ -1,4 +1,4 @@
 FROM openjdk:8
-COPY ./target/Calculator-Using-DevOps-1.0-SNAPSHOT-jar-with-dependencies.jar ./
+COPY ./target/mvndemo-1.0-SNAPSHOT.jar ./
 WORKDIR ./
-CMD ["java", "-jar", "Calculator-Using-DevOps-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java", "-jar", "mvndemo-1.0-SNAPSHOT.jar"]
