@@ -1,4 +1,4 @@
 FROM openjdk:8
-COPY ./target/mvndemo-1.0-SNAPSHOT.jar ./
+COPY ./target/mvndemo-1.0-SNAPSHOT.jar 
 WORKDIR ./
-CMD ["java", "-jar", "mvndemo-1.0-SNAPSHOT.jar", "main"] 
+CMD ["java", "-jar", "mvndemo-1.0-SNAPSHOT.jar"] 
