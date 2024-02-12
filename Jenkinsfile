@@ -1,7 +1,7 @@
 pipeline {
     // Declare variables that will be used by the later stages
     environment {
-        DOCKERHUB_REGISTRY = "jasvinjames/calculator-using-devops"
+        DOCKERHUB_REGISTRY = "umeshjaware/umesh_pipeline"
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-id')
     }
     
