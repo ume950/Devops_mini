@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Git Pull'){
             steps {
-                git url: "https://github.com/ShashidharNagaral/Calculator-DevOps",
+                git url: "https://github.com/ume950/Devps_mini",
                 branch: 'master'
             }
         }
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t shashnagaral/calculator-mini-project:latest .'
+                sh 'docker build -t umeshjaware/umesh_pipeline .'
             }
         }
         stage('Docker Hub Login') {
@@ -28,12 +28,12 @@ pipeline {
         }
         stage('Publish Docker Image on Docker Hub') {
             steps {
-                sh 'docker push shashnagaral/calculator-mini-project:latest'
+                sh 'docker push umeshjaware/umesh_pipeline'
             }
         }
         stage('Remove Docker Image') {
             steps {
-                sh 'docker rmi -f shashnagaral/calculator-mini-project:latest'
+                sh 'docker rmi -f umeshjaware/Devops_mini'
             }
         }
         stage('Ansible deploy') {
