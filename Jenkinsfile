@@ -8,7 +8,7 @@ pipeline {
         stage('Git Pull'){
             steps {
                 git url: "https://github.com/ume950/Devops_mini",
-                branch: 'master'
+                branch: 'main'
             }
         }
         stage('Maven Build') {
