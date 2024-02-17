@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Git Pull'){
             steps {
-                git url: "https://github.com/ume950/Devps_mini",
+                git url: "https://github.com/ume950/Devops_mini",
                 branch: 'master'
             }
         }
@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Remove Docker Image') {
             steps {
-                sh 'docker rmi -f umeshjaware/Devops_mini'
+                sh 'docker rmi -f umeshjaware/umesh_pipeline'
             }
         }
         stage('Ansible deploy') {
