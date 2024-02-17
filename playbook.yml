@@ -7,7 +7,7 @@
         state: started
 
     - name: Pull docker image
-      shell: docker pull shashnagaral/calculator-mini-project:latest
+      shell: docker pull umeshjaware/umesh_pipeline
 
     - name: Get container info
       docker_container_info:
@@ -19,4 +19,4 @@
       when: result.exists
 
     - name: Run docker image
-      shell: docker run -it --name calculator -d shashnagaral/calculator-mini-project:latest
+      shell: docker run -it --name calculator -d umeshjaware/umesh_pipeline
